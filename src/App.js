@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Search from './Search';
 
 function App() {
+  const library = [
+            {name:"Backbone.js"},
+            {name:"Javascript"},
+            {name:"Node.js"},
+            {name:"React.js"},
+            {name:"Angular.js"},
+            {name:"Zenatix gur"},
+            {name:"Zenatix gurgaon"},
+            {name:"Zenatix gurgaon address"},
+            {name:"Zenatix sikanderpur,sector 26,gurgaon"}
+]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Search library={library} />
     </div>
   );
 }
